@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #252525;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.flex {
+  display: flex;
+}
+
+.btn {
+  text-transform: uppercase;
+  margin: 35px auto;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,.29);
+  cursor: pointer;
+  font-size: 16px;
+  width: 250px;
+  position: relative;
+}
+
+.btn:hover {
+  border-color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: 0;
+  font-weight: 700;
+  border-width: 2px;
+}
+.logout-btn{
+  width: 75px;
+  margin: 0 0 0 15px
+}
+.center {
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+}
+.nav a {
+  margin-left: 20px;
+}
+.nav a:first-child {
+  margin-left: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  text-decoration: none;
+}
+.topbar {
+  margin: 30px 0;
+}
+.avatar {
+  height: 50px;
+  border-radius: 25px;
+}
+.userProfile {
+  margin-left: auto;
+  display: flex;
+  margin-top:-7px;
+}
+.userProfile .avatar {
+  margin: -7px 15px 0 15px;
+}
+ul.tabs {
+  display: flex;
+}
+ul.tabs li {
+  flex: 50%;
+  text-align: center;
+  cursor: pointer
+}
+ul.tabs li {
+  border: 1px solid #dad7d7;
+}
+ul.tabs li:first-child {
+  border-right: none;
+}
+ul.tabs li.active {
+  font-weight: bold;
+}
+.card-box {
+  border: 1px solid #dad7d7;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+}
+.card-box .avatar-box {
+  width: 25%;
+  padding: 0 20px;
+}
+.card-box .question {
+  width: 75%;
+  border-left: 1px solid #dad7d7;
+  padding: 0 50px;
+}
+.card-box img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+}
+.form-item {
+  width: 100%;
+}
+.board {
+  width: 50%;
+  margin: 0 auto;
+}
+select, button {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+button {
+  cursor: pointer
+}
+.new-poll {
+  text-align: left;
+  padding: 10px;
+}
+.new-poll input {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #dad7d7;
+  padding: 10px 0;
+  text-indent: 10px;
+  font-size: 15px;
+}
+.voter {
+  padding: 5px;
+  border-radius: 25px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #dad7d7;
+  font-size: 8px;
+  text-align: center;
+}
+.score span {
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #dad7d7;
+  text-align: center;
+}
+.score {
+  width: 25%;
+  padding: 0 20px;
+} 
+h3.mb15 {
+  margin: 0 0 15px 0;
+}
+.w50 {
+  width: 50%;
+  padding: 0 20px;
+}
