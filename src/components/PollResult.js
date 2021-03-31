@@ -4,12 +4,13 @@ import {connect} from 'react-redux'
 class PollResult extends Component {
     render() { 
         const { question, authedUser } = this.props
-        console.log(question)
         const optionOneLength = question.optionOne.votes.length
         const optionTwoLength = question.optionTwo.votes.length
         const totalVotes = optionOneLength + optionTwoLength
         const isYourVoteOne = question.optionOne.votes.includes(authedUser)
         const isYourVoteTwo = question.optionTwo.votes.includes(authedUser)
+        const percentOptionOne = (100*optionOneLength/totalVotes).toFixed()
+        const percentOptionTwo = (100*optionTwoLength/totalVotes).toFixed()
 
         return ( 
             <div className='card-box'>          
@@ -21,12 +22,12 @@ class PollResult extends Component {
                     <div className='question'>
                         <h3 className='mb15'>Results: </h3>
                         <div className='card-box'>
-                            {question.optionOne.text}&nbsp;
+                            <p>{question.optionOne.text} - <strong>{percentOptionOne}%</strong></p>
                             <strong>({optionOneLength} out of {totalVotes} votes)</strong>
                             {isYourVoteOne ? <span className='voter'>Your<br/> Vote</span> : null}
                         </div>
                         <div className='card-box'>
-                            {question.optionTwo.text}&nbsp;
+                            <p>{question.optionTwo.text} - <strong>{percentOptionTwo}%</strong></p>
                             <strong>({optionTwoLength} out of {totalVotes} votes)</strong>
                             {isYourVoteTwo ? <span className='voter'>Your<br/> Vote</span> : null}
                         </div>
