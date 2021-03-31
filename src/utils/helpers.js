@@ -25,8 +25,6 @@ export function formatUser(user) {
         id,
         name,
         questions,
-        name,
-        avatarURL,
         answersLength,
         questionsLength,
         score
